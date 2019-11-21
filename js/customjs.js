@@ -194,7 +194,7 @@ function makeQuote()
     statvalue = quotestat; 
     $("#texts").html(quotelist[statvalue]['quote']);
     $("#author").html("- By " + quotelist[statvalue]['author']);   
-    $("#tweet-quote").attr("href", 'https://twitter.com/intent/tweet?hashtags=ivyli&text=' + encodeURIComponent('"' + quotelist[statvalue].quote + '" ' + quotelist[statvalue].author + ' getquotes.netlify.com/'));
+    $("#tweet-quote").attr("href", 'https://twitter.com/intent/tweet?hashtags=ivyli&text=' + encodeURIComponent('"' + quotelist[statvalue].quote + '" ' + ' -' + quotelist[statvalue].author  + '  https://getquotes.netlify.com/ '));
 }
 
 //  Twitter API 
