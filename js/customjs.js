@@ -191,9 +191,9 @@ function makeQuote()
 {
 
     var quotestat = Math.floor(Math.random() * totquote);
+    statvalue = quotestat; 
     $("#texts").html(quotelist[statvalue]['quote']);
     $("#author").html("- By " + quotelist[statvalue]['author']);   
-    statvalue = quotestat; 
     $("#tweet-quote").attr("href", 'https://twitter.com/intent/tweet?hashtags=ivyli&text=' + encodeURIComponent('"' + quotelist[statvalue].quote + '" ' + quotelist[statvalue].author + ' www.getquotes.netlify.com'));
 }
 
